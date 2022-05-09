@@ -7,7 +7,7 @@ using System.Numerics;
 using Toolbox.Core.Animations;
 using BfresLibrary;
 using MapStudio.UI;
-using ImGuiNET;
+using ImGuiSharp;
 using CafeLibrary.Rendering;
 
 namespace CafeLibrary

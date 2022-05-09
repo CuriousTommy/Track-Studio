@@ -31,8 +31,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Reference Include="ImGui.NET">
-      <HintPath>..\Track Studio\Lib\ImGui.NET.dll</HintPath>
+    <Reference Include="ImGuiSharp">
+      <HintPath>..\Track Studio\Lib\ImGuiSharp.dll</HintPath>
     </Reference>
     <Reference Include="OpenTK">
       <HintPath>..\Track Studio\Lib\OpenTK.dll</HintPath>

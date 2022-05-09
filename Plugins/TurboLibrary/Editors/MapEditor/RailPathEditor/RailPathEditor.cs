@@ -8,7 +8,7 @@ using OpenTK;
 using GLFrameworkEngine;
 using Toolbox.Core.ViewModels;
 using MapStudio.UI;
-using ImGuiNET;
+using ImGuiSharp;
 
 namespace TurboLibrary.MuuntEditor
 {

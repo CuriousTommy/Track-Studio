@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using OpenTK.Graphics.OpenGL;
-using ImGuiNET;
+using ImGuiSharp;
 using System.IO;
 using MapStudio.UI;
 using CafeLibrary.Rendering;

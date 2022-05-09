@@ -26,8 +26,8 @@
     <Reference Include="BfshaLibrary">
       <HintPath>..\..\Track Studio\Lib\BfshaLibrary.dll</HintPath>
     </Reference>
-    <Reference Include="ImGui.NET">
-      <HintPath>..\..\Track Studio\Lib\ImGui.NET.dll</HintPath>
+    <Reference Include="ImGuiSharp">
+      <HintPath>..\..\Track Studio\Lib\ImGuiSharp.dll</HintPath>
     </Reference>
     <Reference Include="IONET">
       <HintPath>..\..\Track Studio\Lib\IONET.dll</HintPath>

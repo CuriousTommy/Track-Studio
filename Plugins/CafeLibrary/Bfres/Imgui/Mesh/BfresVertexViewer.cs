@@ -7,7 +7,7 @@ using BfresLibrary;
 using MapStudio.UI;
 using UIFramework;
 using BfresLibrary.Helpers;
-using ImGuiNET;
+using ImGuiSharp;
 
 namespace CafeLibrary
 {

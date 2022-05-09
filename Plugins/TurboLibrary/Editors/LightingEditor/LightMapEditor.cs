@@ -5,7 +5,7 @@ using System.Text;
 using System.Numerics;
 using AGraphicsLibrary;
 using GLFrameworkEngine;
-using ImGuiNET;
+using ImGuiSharp;
 using MapStudio.UI;
 
 namespace TurboLibrary.LightingEditor

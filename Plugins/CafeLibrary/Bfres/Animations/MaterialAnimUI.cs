@@ -8,7 +8,7 @@ using UIFramework;
 using BfresLibrary;
 using CafeLibrary.Rendering;
 using Toolbox.Core.Animations;
-using ImGuiNET;
+using ImGuiSharp;
 
 namespace CafeLibrary
 {

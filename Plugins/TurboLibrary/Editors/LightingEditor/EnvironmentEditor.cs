@@ -4,7 +4,7 @@ using System.Linq;
 using System.IO;
 using System.Numerics;
 using AGraphicsLibrary;
-using ImGuiNET;
+using ImGuiSharp;
 using MapStudio.UI;
 using Toolbox.Core;
 using GLFrameworkEngine;

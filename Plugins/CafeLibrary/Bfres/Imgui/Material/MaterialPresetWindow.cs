@@ -4,7 +4,7 @@ using System.IO.Compression;
 using System.IO;
 using System.Numerics;
 using System.Linq;
-using ImGuiNET;
+using ImGuiSharp;
 using BfresLibrary;
 using Toolbox.Core;
 using Toolbox.Core.ViewModels;

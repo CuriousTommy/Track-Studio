@@ -12,7 +12,7 @@ using MapStudio.UI;
 using CafeLibrary.Rendering;
 using Syroot.NintenTools.NSW.Bntx;
 using OpenTK;
-using ImGuiNET;
+using ImGuiSharp;
 using UIFramework;
 
 namespace CafeLibrary

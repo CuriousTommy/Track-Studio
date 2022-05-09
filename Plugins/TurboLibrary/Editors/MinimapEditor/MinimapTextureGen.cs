@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using GLFrameworkEngine;
 using MapStudio.UI;
-using ImGuiNET;
+using ImGuiSharp;
 using System.Numerics;
 using OpenTK.Graphics.OpenGL;
 
