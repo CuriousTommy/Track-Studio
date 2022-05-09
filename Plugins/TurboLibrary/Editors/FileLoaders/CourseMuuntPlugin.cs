@@ -342,7 +342,7 @@ namespace TurboLibrary
 
             //Load custom window editors
             LightingEditorWindow = new LightingEditorWindow(Workspace, this);
-            LightingEditorWindow.DockDirection = ImGuiNET.ImGuiDir.Right;
+            LightingEditorWindow.DockDirection = ImGuiSharp.ImGuiDir.Right;
             LightingEditorWindow.SplitRatio = Workspace.PropertyWindow.SplitRatio;
             Workspace.Windows.Add(new IntroCameraKeyEditor());
 
@@ -542,7 +542,7 @@ namespace TurboLibrary
         {
             base.DrawHelpWindow();
 
-            if (ImGuiNET.ImGui.CollapsingHeader("Editors", ImGuiNET.ImGuiTreeNodeFlags.DefaultOpen))
+            if (ImGuiSharp.ImGui.CollapsingHeader("Editors", ImGuiSharp.ImGuiTreeNodeFlags.DefaultOpen))
             {
                 ImGuiHelper.BoldTextLabel("Alt + Click", "Add.");
                 ImGuiHelper.BoldTextLabel("Del", "Delete.");
@@ -701,7 +701,7 @@ namespace TurboLibrary
 
         public override void DrawToolWindow()
         {
-            if (ImGuiNET.ImGui.CollapsingHeader("Transform Scene"))
+            if (ImGuiSharp.ImGui.CollapsingHeader("Transform Scene"))
             {
                 var transform = MapLoader.BfresEditor.Renderer.Transform;
                 if (ImGuiHelper.InputTKVector3("Position", transform, "Position"))

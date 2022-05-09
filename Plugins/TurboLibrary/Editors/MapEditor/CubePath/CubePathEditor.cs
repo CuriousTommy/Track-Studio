@@ -84,7 +84,7 @@ namespace TurboLibrary.MuuntEditor
                 Renderer.IsSelected = false;
             }
 
-            var h = ImGuiNET.ImGui.GetWindowHeight();
+            var h = ImGuiSharp.ImGui.GetWindowHeight();
             var size = new System.Numerics.Vector2(h, h);
 
             bool refreshScene = false;
@@ -111,7 +111,7 @@ namespace TurboLibrary.MuuntEditor
         }
 
         public void DrawHelpWindow() {
-            if (ImGuiNET.ImGui.CollapsingHeader("Paths", ImGuiNET.ImGuiTreeNodeFlags.DefaultOpen))
+            if (ImGuiSharp.ImGui.CollapsingHeader("Paths", ImGuiSharp.ImGuiTreeNodeFlags.DefaultOpen))
             {
                 ImGuiHelper.BoldTextLabel(InputSettings.INPUT.Scene.Create, "Create Point.");
                 ImGuiHelper.BoldTextLabel(InputSettings.INPUT.Scene.Extrude, "Extrude Point.");

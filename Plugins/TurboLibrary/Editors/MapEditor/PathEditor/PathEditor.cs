@@ -84,7 +84,7 @@ namespace TurboLibrary.MuuntEditor
 
             bool refreshScene = false;
 
-            var h = ImGuiNET.ImGui.GetWindowHeight();
+            var h = ImGuiSharp.ImGui.GetWindowHeight();
             var size = new System.Numerics.Vector2(h, h);
 
             refreshScene |= ImguiCustomWidgets.ButtonToggle($"  {IconManager.XRAY}    ", ref Renderer.XRayMode, size);
@@ -108,9 +108,9 @@ namespace TurboLibrary.MuuntEditor
             if (ImguiCustomWidgets.MenuItemTooltip($"   {IconManager.UNLINK_ICON}   ", "UNCONNECT"))
                 Renderer.UnlinkSelectedPoints();
 
-            ImGuiNET.ImGui.PushItemWidth(70);
-            refreshScene |= ImGuiNET.ImGui.DragFloat($"{TranslationSource.GetText("POINT_SIZE")}", ref RenderablePath.PointSize, 0.1f, 0.1f);
-            ImGuiNET.ImGui.PopItemWidth();
+            ImGuiSharp.ImGui.PushItemWidth(70);
+            refreshScene |= ImGuiSharp.ImGui.DragFloat($"{TranslationSource.GetText("POINT_SIZE")}", ref RenderablePath.PointSize, 0.1f, 0.1f);
+            ImGuiSharp.ImGui.PopItemWidth();
 
             if (refreshScene)
                 GLContext.ActiveContext.UpdateViewport = true;
@@ -118,7 +118,7 @@ namespace TurboLibrary.MuuntEditor
 
         public void DrawHelpWindow() 
         {
-            if (ImGuiNET.ImGui.CollapsingHeader("Paths", ImGuiNET.ImGuiTreeNodeFlags.DefaultOpen))
+            if (ImGuiSharp.ImGui.CollapsingHeader("Paths", ImGuiSharp.ImGuiTreeNodeFlags.DefaultOpen))
             {
                 ImGuiHelper.BoldTextLabel(InputSettings.INPUT.Scene.Create, "Create Point.");
                 ImGuiHelper.BoldTextLabel(InputSettings.INPUT.Scene.Extrude, "Extrude Point.");

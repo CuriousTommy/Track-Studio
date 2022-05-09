@@ -84,7 +84,7 @@ namespace TurboLibrary.MuuntEditor
         }
 
         public void DrawHelpWindow() {
-            if (ImGuiNET.ImGui.CollapsingHeader("Objects", ImGuiNET.ImGuiTreeNodeFlags.DefaultOpen))
+            if (ImGuiSharp.ImGui.CollapsingHeader("Objects", ImGuiSharp.ImGuiTreeNodeFlags.DefaultOpen))
             {
                 ImGuiHelper.BoldTextLabel(InputSettings.INPUT.Scene.Create, "Create Object.");
             }

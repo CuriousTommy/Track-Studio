@@ -90,7 +90,7 @@ namespace TurboLibrary.MuuntEditor
 
         public void DrawHelpWindow() 
         {
-            if (ImGuiNET.ImGui.CollapsingHeader("Paths", ImGuiNET.ImGuiTreeNodeFlags.DefaultOpen))
+            if (ImGuiSharp.ImGui.CollapsingHeader("Paths", ImGuiSharp.ImGuiTreeNodeFlags.DefaultOpen))
             {
                 ImGuiHelper.BoldTextLabel(InputSettings.INPUT.Scene.EditMode, "Edit Selected Path.");
                 ImGuiHelper.BoldTextLabel(InputSettings.INPUT.Scene.Extrude, "Extrude Point.");
@@ -250,7 +250,7 @@ namespace TurboLibrary.MuuntEditor
                 path.UINode.TagUI.UIDrawer = null;
                 path.UINode.TagUI.UIDrawer += delegate
                 {
-                    if (ImGuiNET.ImGui.Button(TranslationSource.GetText("EXPORT")))
+                    if (ImGuiSharp.ImGui.Button(TranslationSource.GetText("EXPORT")))
                     {
                         var sfd = new ImguiFileDialog() { SaveDialog = true };
                         sfd.FileName = path.UINode.Header;
@@ -259,8 +259,8 @@ namespace TurboLibrary.MuuntEditor
                             path.ExportAsFile(sfd.FilePath);
                         }
                     }
-                    ImGuiNET.ImGui.SameLine();
-                    if (ImGuiNET.ImGui.Button(TranslationSource.GetText("IMPORT")))
+                    ImGuiSharp.ImGui.SameLine();
+                    if (ImGuiSharp.ImGui.Button(TranslationSource.GetText("IMPORT")))
                     {
                         var sfd = new ImguiFileDialog();
                         sfd.FileName = path.UINode.Header;
