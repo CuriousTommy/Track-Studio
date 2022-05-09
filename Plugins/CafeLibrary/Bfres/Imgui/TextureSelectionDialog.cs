@@ -49,7 +49,7 @@ namespace CafeLibrary
             bool hasInput = false;
             if (ImGui.BeginPopup("textureSelector1", ImGuiWindowFlags.NoScrollbar | ImGuiWindowFlags.NoScrollWithMouse))
             {
-                if (ImGui.IsKeyDown((int)ImGuiKey.Enter))
+                if (ImGui.IsKeyDown(ImGuiKey.Enter))
                 {
                     ImGui.CloseCurrentPopup();
                 }
