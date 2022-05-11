@@ -1,20 +1,20 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>net5.0</TargetFramework>
+    <TargetFramework>net6.0</TargetFramework>
     <RootNamespace>CafeLibrary</RootNamespace>
     <AssemblyName>CafeLibrary</AssemblyName>
   </PropertyGroup>
 
 	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
 		<AllowUnsafeBlocks>true</AllowUnsafeBlocks>
-		<OutputPath>..\..\Track Studio\bin\Debug\net5.0\Plugins\</OutputPath>
+		<OutputPath>..\..\Track Studio\bin\Debug\net6.0\Plugins\</OutputPath>
 	</PropertyGroup>
 
 	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
 		<AllowUnsafeBlocks>true</AllowUnsafeBlocks>
 		<Optimize>false</Optimize>
-		<OutputPath>..\..\Track Studio\bin\Release\net5.0\Plugins\</OutputPath>
+		<OutputPath>..\..\Track Studio\bin\Release\net6.0\Plugins\</OutputPath>
 	</PropertyGroup>
   <ItemGroup>
     <Reference Include="AampLibraryCSharp">

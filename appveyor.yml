@@ -11,7 +11,7 @@ install:
   - git submodule update --init --recursive
 after_build:
 - cmd: >-
-    7z a TrackStudio-Latest.zip "%APPVEYOR_BUILD_FOLDER%\Track Studio\bin\Release\net5.0\"
+    7z a TrackStudio-Latest.zip "%APPVEYOR_BUILD_FOLDER%\Track Studio\bin\Release\net6.0\"
 
 
     appveyor PushArtifact "TrackStudio-Latest.zip"
